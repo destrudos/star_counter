@@ -25,7 +25,7 @@ for i in range(250):
 print(liczba)
 numbers = list(map(lambda x: x, range(1, 251)))
 
-p = np.polyfit(numbers, liczba, 13)
+p = np.polyfit(numbers, liczba, 12)
 
 # Generate x values for plotting
 x = np.linspace(numbers[0], numbers[-1], 100)
