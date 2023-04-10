@@ -26,7 +26,7 @@ print(liczba)
 numbers = list(map(lambda x: x, range(1, 251)))
 
 p = np.polyfit(numbers, liczba, 12)
-
+print(np.poly1d(p))
 # Generate x values for plotting
 x = np.linspace(numbers[0], numbers[-1], 100)
 
@@ -37,8 +37,4 @@ y = np.polyval(p, x)
 plt.plot(numbers, liczba, 'o', label='Data')
 plt.plot(x, y, label='Fit')
 plt.legend()
-plt.show()
-
-
-
 plt.show()
